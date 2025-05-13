@@ -38,6 +38,13 @@ body {
     overflow-x: hidden; 
 }
 
+/* === UTILITY CLASS FOR PREVENTING BODY SCROLL === */
+body.lightbox-open {
+    overflow: hidden;
+    /* Optional: Add padding-right to compensate for scrollbar removal if it causes layout shift */
+    /* padding-right: 15px; /* Adjust this value based on typical scrollbar width */
+}
+
 /* === PRELOADER === */
 #preloader {
     position: fixed;
