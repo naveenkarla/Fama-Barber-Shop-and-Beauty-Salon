@@ -1094,7 +1094,7 @@ footer {
     #hero h1 { font-size: 3rem; }
     
     .about-content { flex-direction: column; text-align: center; }
-    .about-image { margin-top: 30px; width: 80%; max-width: 400px; }
+    .about-image { margin-top: 0px; width: 100%; max-width: 400px; }
     
     .contact-grid { grid-template-columns: 1fr; }
     .map-container { margin-top: 30px; height: 300px; }
