@@ -171,4 +171,16 @@ document.addEventListener('DOMContentLoaded', () => {
             // No style manipulation needed here, CSS handles the visual change based on the 'active' class
         });
     });
+    // Scroll to Top Button Functionality (NEW)
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    if (scrollToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show button after 300px scroll
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+        // Smooth scroll to top on click is handled by the href="#hero" and html scroll-behavior
+    }
 });
