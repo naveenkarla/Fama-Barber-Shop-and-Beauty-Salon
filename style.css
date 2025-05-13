@@ -716,6 +716,13 @@ header .nav-links a.active::after { /* Assuming 'active' class is added via JS f
     border-color: var(--primary-color);
     transform: scale(1.02);
 }
+.testimonial-avatar {
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px auto;
+    border: 3px solid var(--primary-color-lighter);
+}
 .testimonial-card .comment {
     font-style: italic;
     font-size: 1.2rem;
