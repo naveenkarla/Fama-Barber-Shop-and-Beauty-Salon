@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fama Barber Shop and Beauty Salon - Denton, TX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Background Animation Container -->
+    <div class="background-animation-container">
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo animated-text">Fama Barber</a>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Carousel -->
+        <section id="hero">
+            <div class="hero-slide active" style="background-image: url('images/banner.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/banner1.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/banner2.jpg');"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="animate-on-scroll fade-in-up">Fama Barber Shop & Beauty Salon</h1>
+                <p class="category animate-on-scroll fade-in-up" data-delay="200">Barber Shop</p>
+                <p class="rating animate-on-scroll fade-in-up" data-delay="400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    4.6 stars (116+ reviews)
+                </p>
+                <a href="#contact" class="cta-button animate-on-scroll fade-in-up" data-delay="600">Book Appointment</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll fade-in">About Us</h2>
+                <div class="about-content">
+                    <div class="about-text animate-on-scroll slide-in-left">
+                        <h3>Your Premier Grooming Destination in Denton</h3>
+                        <p>Welcome to Fama Barber Shop and Beauty Salon! We are dedicated to providing top-notch
+                            grooming services and an exceptional experience for every client. Located conveniently at
+                            500 N Bell Ave #109, Denton, TX, our skilled barbers are passionate about crafting the
+                            perfect look for you.</p>
+                        <p>We believe a great haircut is more than just a style; it's an expression of confidence. Come
+                            visit us and see why we're a trusted name in the community.</p>
+                        <p><strong>Status:</strong> <span class="status-open">Open</span> ⋅ Closes 7 PM</p>
+                    </div>
+                    <div class="about-image animate-on-scroll slide-in-right">
+                        <!-- IMPORTANT: Replace 'images/banner.jpg' with a relevant, high-quality image of the barbershop interior or exterior -->
+                        <img src="images/banner.jpg" alt="Inside Fama Barber Shop">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll fade-in">Our Services</h2>
+                <div class="service-grid">
+                    <div class="service-item animate-on-scroll fade-in-up" data-delay="0">
+                        <!-- IMPORTANT: Replace 'images/g.jpg' with an image representing a classic haircut -->
+                        <img src="images/classic-hair-cut.jpg" alt="Classic Haircut">
+                        <i class="fas fa-cut service-icon"></i>
+                        <h3>Classic Haircuts</h3>
+                        <p>Tailored cuts to suit your style, from timeless classics to modern trends.</p>
+                    </div>
+                    <div class="service-item animate-on-scroll fade-in-up" data-delay="200">
+                        <!-- IMPORTANT: Replace 'images/h.jpg' with an image representing beard trimming -->
+                        <img src="images/beard-trim-shaping.jpg" alt="Beard Trim">
+                        <i class="fas fa-spa service-icon"></i>
+                        <h3>Beard Trim & Shaping</h3>
+                        <p>Expert grooming for a perfectly sculpted and maintained beard.</p>
+                    </div>
+                    <div class="service-item animate-on-scroll fade-in-up" data-delay="400">
+                        <!-- IMPORTANT: Replace 'images/i.jpg' with an image representing a hot towel shave -->
+                        <img src="images/hot-towel-shave.jpg" alt="Hot Towel Shave">
+                        <i class="fas fa-feather-alt service-icon"></i>
+                        <h3>Hot Towel Shave</h3>
+                        <p>A luxurious and smooth shaving experience that rejuvenates your skin.</p>
+                    </div>
+                    <div class="service-item animate-on-scroll fade-in-up" data-delay="600">
+                        <!-- IMPORTANT: Replace 'images/j.jpg' with an image representing a kid's haircut -->
+                        <img src="images/kids-cuts.jpg" alt="Kids Haircut">
+                        <i class="fas fa-child service-icon"></i>
+                        <h3>Kids' Cuts</h3>
+                        <p>Patient and stylish cuts for our younger clients.</p>
+                    </div>
+                     <div class="service-item animate-on-scroll fade-in-up" data-delay="800">
+                        <!-- IMPORTANT: Replace 'images/j.jpg' with an image representing a kid's haircut -->
+                        <img src="images/kids-cuts.jpg" alt="Kids Haircut">
+                        <i class="fas fa-child service-icon"></i>
+                        <h3>Kids' Cuts</h3>
+                        <p>Patient and stylish cuts for our younger clients.</p>
+                    </div>
+                     <div class="service-item animate-on-scroll fade-in-up" data-delay="1000">
+                        <!-- IMPORTANT: Replace 'images/j.jpg' with an image representing a kid's haircut -->
+                        <img src="images/kids-cuts.jpg" alt="Kids Haircut">
+                        <i class="fas fa-child service-icon"></i>
+                        <h3>Kids' Cuts</h3>
+                        <p>Patient and stylish cuts for our younger clients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section-padding">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll fade-in">Our Work</h2>
+                <div class="gallery-grid">
+                    <!-- IMPORTANT: Replace these with actual photos of haircuts/styles from the barber shop -->
+                    <div class="gallery-item animate-on-scroll zoom-in"><img src="images/cosmetologist.jpg"
+                            alt="Barber work 1"></div>
+                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="100"><img
+                            src="images/face-young-girl.jpg" alt="Barber work 2"></div>
+                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="200"><img
+                            src="images/female-hairdresser.jpg" alt="Barber work 3"></div>
+                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="300"><img
+                            src="images/hairstylist-cutting.jpg" alt="Barber work 4"></div>
+                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="400"><img
+                            src="images/kids-image-1.jpg" alt="Barber work 5"></div>
+                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="500"><img
+                            src="images/stylish-man.jpg" alt="Barber work 6"></div>
+                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="400"><img src="images/makeup.jpg"
+                            alt="Barber work 5"></div>
+                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="500"><img
+                            src="images/kids-image-2.jpg" alt="Barber work 6"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW Accordion Structure -->
+        <section id="acd-services" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll fade-in">More Services</h2>
+                <div class="accordion animate-on-scroll fade-in-up" data-delay="100">
+                    <!-- Hair Category -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="content-hair">
+                            <div>
+                                <i class="fas fa-cut accordion-icon"></i> Hair Services
+                            </div>
+                            <span class="accordion-toggle-icon"><i class="fas fa-plus"></i></span>
+                        </button>
+                        <div class="accordion-content" id="content-hair" role="region" aria-labelledby="header-hair">
+                            <div class="accordion-content-inner">
+                                <dl>
+                                    <dt>Haircuts</dt>
+                                    <dd>Various styles and techniques, including precision men's and women's cuts.</dd>
+                                    <dt>Hair Coloring</dt>
+                                    <dd>Professional tints, vibrant highlights, balayage, ombre, and other custom color techniques.
+                                    </dd>
+                                    <dt>Hair Treatments</dt>
+                                    <dd>Revitalizing Keratin treatments, smoothing treatments, deep conditioning, and other spa
+                                        treatments for hair health.</dd>
+                                    <dt>Hair Styling</dt>
+                                    <dd>Glamorous blowouts, elegant updos, intricate braiding, and other special occasion styling
+                                        services.</dd>
+                                    <dt>Hair Removal (Scalp/Face related)</dt>
+                                    <dd>Threading and potentially specific facial waxing related to hairline shaping (Clarify if
+                                        body waxing is separate).</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nails Category -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="content-nails">
+                            <div>
+                                <i class="fas fa-hand-sparkles accordion-icon"></i> Nail Care
+                            </div>
+                            <span class="accordion-toggle-icon"><i class="fas fa-plus"></i></span>
+                        </button>
+                        <div class="accordion-content" id="content-nails" role="region" aria-labelledby="header-nails">
+                            <div class="accordion-content-inner">
+                                <dl>
+                                    <dt>Manicures</dt>
+                                    <dd>Expert nail shaping, detailed cuticle care, relaxing hand massage, and flawless polish
+                                        application.</dd>
+                                    <dt>Pedicures</dt>
+                                    <dd>Soothing foot soaking, callus removal, cuticle care, foot massage, and perfect polish
+                                        application.</dd>
+                                    <dt>Nail Enhancements</dt>
+                                    <dd>Durable and beautiful Acrylic nails, Gel extensions, and other nail extensions/enhancements.
+                                    </dd>
+                                    <dt>Nail Art</dt>
+                                    <dd>Custom and creative decorative nail designs, from simple elegance to intricate masterpieces.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skin Category -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="content-skin">
+                            <div>
+                                <i class="fas fa-spa accordion-icon"></i> Skin Care & Wellness
+                            </div>
+                            <span class="accordion-toggle-icon"><i class="fas fa-plus"></i></span>
+                        </button>
+                        <div class="accordion-content" id="content-skin" role="region" aria-labelledby="header-skin">
+                            <div class="accordion-content-inner">
+                                <dl>
+                                    <dt>Facials</dt>
+                                    <dd>Customized facials targeting various skin concerns like acne, aging, hydration, and
+                                        brightening.</dd>
+                                    <dt>Skincare Treatments</dt>
+                                    <dd>Effective D-tan treatments, rejuvenating chemical peels, microdermabrasion, and other
+                                        advanced skincare procedures.</dd>
+                                    <dt>Waxing</dt>
+                                    <dd>Smooth and efficient body and face waxing services for long-lasting hair removal.</dd>
+                                    <dt>Massage</dt>
+                                    <dd>Relaxing head massages, therapeutic body massages, and calming aromatherapy sessions.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Makeup Category -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="content-makeup">
+                            <div>
+                                <i class="fas fa-magic accordion-icon"></i> Makeup Artistry
+                            </div>
+                            <span class="accordion-toggle-icon"><i class="fas fa-plus"></i></span>
+                        </button>
+                        <div class="accordion-content" id="content-makeup" role="region" aria-labelledby="header-makeup">
+                            <div class="accordion-content-inner">
+                                <dl>
+                                    <dt>Bridal Makeup</dt>
+                                    <dd>Exquisite makeup application for weddings and special pre-wedding occasions, tailored to the
+                                        bride's vision.</dd>
+                                    <dt>Party & Event Makeup</dt>
+                                    <dd>Stunning makeup looks for parties, galas, photoshoots, and other important events.</dd>
+                                    <dt>Everyday Makeup</dt>
+                                    <dd>Natural and polished makeup application suitable for daily wear or professional settings.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Services Category -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="content-other">
+                            <div>
+                                <i class="fas fa-ellipsis-h accordion-icon"></i> Additional Services
+                            </div>
+                            <span class="accordion-toggle-icon"><i class="fas fa-plus"></i></span>
+                        </button>
+                        <div class="accordion-content" id="content-other" role="region" aria-labelledby="header-other">
+                            <div class="accordion-content-inner">
+                                <dl>
+                                    <dt>Tanning</dt>
+                                    <dd>Safe and effective artificial tanning services for a sun-kissed glow.</dd>
+                                    <dt>Body Shaping</dt>
+                                    <dd>Various non-invasive body shaping and contouring treatments (Specify types if known).</dd>
+                                    <dt>Event Catering Services</dt>
+                                    <dd>Convenient catering options for events hosted at the salon (e.g., spa parties).</dd>
+                                    <dt>Salon at Home</dt>
+                                    <dd>Bringing professional salon services directly to the comfort of your home (Specify service
+                                        range).</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Accordion -->
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section-padding bg-dark text-light">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll fade-in">What Our Clients Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-card active animate-on-scroll fade-in-up">
+                        <p class="comment">"Costly compared to other barbershops with better haircuts."</p>
+                        <p class="reviewer">- A Customer (via Google Reviews)</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll fade-in-up" data-delay="200">
+                        <p class="comment">"Amazing service and friendly staff! I always leave looking sharp. Best
+                            barber in Denton!"</p>
+                        <p class="reviewer">- John D.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll fade-in-up" data-delay="400">
+                        <p class="comment">"Fama Shop is my go-to. Professional, clean, and they really listen to what
+                            you want."</p>
+                        <p class="reviewer">- Maria S.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <!-- Add more testimonials as needed -->
+                </div>
+                <div class="testimonial-nav">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Map Section -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll fade-in">Visit or Call Us</h2>
+                <div class="contact-grid">
+                    <div class="contact-details animate-on-scroll slide-in-left">
+                        <h3>Fama Barber Shop & Beauty Salon</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 500 N Bell Ave #109, Denton, TX 76209, United States
+                        </p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+19406129127">+1 940-612-9127</a></p>
+                        <p><i class="fas fa-clock"></i> <strong>Status:</strong> <span class="status-open">Open</span> ⋅
+                            Closes 7 PM</p>
+                        <p><i class="fas fa-star"></i> 4.6 stars (116+ Google reviews)</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Fama+Barber+Shop+and+Beauty+Salon+500+N+Bell+Ave+%23109,+Denton,+TX+76209"
+                            target="_blank" class="cta-button cta-button-secondary">
+                            <!-- Made primary CTA style for consistency -->
+                            <i class="fas fa-directions"></i> Get Directions
+                        </a>
+                    </div>
+                    <div class="map-container animate-on-scroll slide-in-right">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.323019099002!2d-97.1377286847984!3d33.21347998079044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864dcb0df11a173b%3A0x1f994e0a8d8b6a95!2sFama%20Barber%20Shop%20and%20Beauty%20Salon!5e0!3m2!1sen!2sus!4vSOMETHING_HERE_OR_LEAVE_BLANK"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4>Fama Barber Shop</h4>
+                    <p>Your trusted local barbershop for quality cuts and styles in Denton, TX.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <!-- IMPORTANT: Replace '#' with actual social media links -->
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Fama Barber Shop and Beauty Salon. All Rights Reserved. Designed
+                    with <i class="fas fa-heart"></i> by Naveen Karla Task.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
