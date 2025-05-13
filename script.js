@@ -183,4 +183,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         // Smooth scroll to top on click is handled by the href="#hero" and html scroll-behavior
     }
+    document.addEventListener('DOMContentLoaded', () => {
+    // ... (all your existing JavaScript code) ...
+
+    // Lightbox body scroll prevention
+    if (typeof $ !== 'undefined' && $.fn.lightbox) { // Check if jQuery and Lightbox are loaded
+        $(document).on('lightbox:opened', function() {
+            $('body').addClass('lightbox-open');
+            // Optional: Store current scroll position to restore later if needed
+            // $('body').data('scroll-position', $(window).scrollTop());
+        });
+
+        $(document).on('lightbox:closed', function() {
+            $('body').removeClass('lightbox-open');
+            // Optional: Restore scroll position
+            // if ($('body').data('scroll-position') !== undefined) {
+            //     $(window).scrollTop($('body').data('scroll-position'));
+            //     $('body').removeData('scroll-position');
+            // }
+        });
+    }
+});
 });
