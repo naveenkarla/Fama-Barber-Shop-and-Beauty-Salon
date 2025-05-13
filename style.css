@@ -259,6 +259,7 @@ header.scrolled {
 main, footer {
     position: relative;
     z-index: 1;
+    overflow-x: hidden;
 }
 
 header .container {
