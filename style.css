@@ -703,27 +703,94 @@ header .nav-links a.active::after { /* Assuming 'active' class is added via JS f
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    gap: 20px; /* Slightly increased gap */
 }
+
 .gallery-item {
-    border-radius: 8px;
+    position: relative; /* For positioning the overlay */
+    border-radius: var(--border-radius-main);
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform var(--transition-speed) var(--transition-cubic), 
+    box-shadow: var(--shadow-soft);
+    transition: transform var(--transition-speed) var(--transition-cubic),
                 box-shadow var(--transition-speed) var(--transition-cubic);
 }
+
+.gallery-item a { /* The link now wraps the image and overlay */
+    display: block; /* Ensure the link takes up the full space */
+    position: relative; /* For overlay positioning within the link */
+    line-height: 0; /* Prevents extra space if image doesn't load */
+}
+
 .gallery-item img {
     width: 100%;
-    height: 250px;
+    height: 280px; /* Slightly taller for better visual */
     object-fit: cover;
+    display: block; 
+    border-radius: var(--border-radius-main); /* Image itself can have radius too */
     transition: transform 0.4s var(--transition-cubic);
 }
+
 .gallery-item:hover {
-    transform: translateY(-5px) scale(1.03);
-    box-shadow: 0 8px 25px rgba(var(--secondary-color-rgb), 0.15);
+    transform: translateY(-8px) scale(1.02); /* Enhanced hover */
+    box-shadow: var(--shadow-medium);
 }
+
 .gallery-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Zoom image slightly more on hover */
+}
+
+/* Overlay for Hover Text */
+.gallery-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(var(--primary-color-rgb), 0.8); /* Primary color overlay */
+    color: var(--secondary-color); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: var(--border-radius-main);
+    transition: opacity 0.4s var(--transition-cubic);
+    text-align: center;
+    padding: 15px;
+    pointer-events: none; /* Allows clicks to pass through to the <a> tag for lightbox */
+}
+
+.gallery-item a:hover .gallery-item-overlay {
+    opacity: 1;
+}
+
+.gallery-item-title {
+    font-family: var(--font-headings);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff; /* White text on colored overlay */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.gallery-zoom-icon {
+    font-size: 2.2rem;
+    margin-top: 10px;
+    color: #fff;
+    opacity: 0.9;
+}
+
+/* Responsive adjustments for gallery images */
+@media (max-width: 500px) {
+    .gallery-item img {
+        height: 220px;
+    }
+    .gallery-item-title {
+        font-size: 1.1rem;
+    }
+    .gallery-zoom-icon {
+        font-size: 1.8rem;
+    }
 }
 
 /* === SPECIAL OFFERS SECTION === */
