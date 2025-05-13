@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    // Preloader
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        window.addEventListener('load', () => {
+            setTimeout(() => { // Optional delay for smoother transition
+                preloader.classList.add('loaded');
+            }, 500); // Adjust delay as needed, or remove timeout for instant hide
+        });
+    }
     
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('header .nav-links a[href^="#"]');
