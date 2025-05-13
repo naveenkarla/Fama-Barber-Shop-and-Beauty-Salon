@@ -10,6 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
+    
+     <!-- Lightbox2 CSS (CDN) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 
 </head>
 
@@ -150,28 +153,94 @@
             </div>
         </section>
 
-        <!-- Gallery Section -->
+          <!-- Gallery Section -->
         <section id="gallery" class="section-padding">
             <div class="container">
-                <h2 class="section-title animate-on-scroll fade-in">Gallery</h2>
+                <h2 class="section-title animate-on-scroll fade-in">Our Work</h2>
                 <div class="gallery-grid">
-                    <!-- IMPORTANT: Replace these with actual photos of haircuts/styles from the barber shop -->
-                    <div class="gallery-item animate-on-scroll zoom-in"><img src="images/cosmetologist.jpg"
-                            alt="Barber work 1"></div>
-                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="100"><img
-                            src="images/face-young-girl.jpg" alt="Barber work 2"></div>
-                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="200"><img
-                            src="images/female-hairdresser.jpg" alt="Barber work 3"></div>
-                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="300"><img
-                            src="images/hairstylist-cutting.jpg" alt="Barber work 4"></div>
-                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="400"><img
-                            src="images/kids-image-1.jpg" alt="Barber work 5"></div>
-                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="500"><img
-                            src="images/stylish-man.jpg" alt="Barber work 6"></div>
-                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="400"><img src="images/makeup.jpg"
-                            alt="Barber work 5"></div>
-                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="500"><img
-                            src="images/kids-image-2.jpg" alt="Barber work 6"></div>
+                    <div class="gallery-item animate-on-scroll zoom-in">
+                        <a href="images/cosmetologist-large.jpg" data-lightbox="salon-gallery" data-title="Professional Cosmetology">
+                            <img src="images/cosmetologist.jpg" alt="Cosmetology service in action">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-title">Cosmetology</span>
+                                <i class="fas fa-search-plus gallery-zoom-icon"></i>
+                            </div>
+                        </a>
+                        <!-- <img src="images/cosmetologist.jpg" alt="Barber work 1"> -->
+                    </div>
+                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="100">
+                        <a href="images/face-young-girl.jpg" data-lightbox="salon-gallery" data-title="Youthful Skincare Treatment">
+                            <img src="images/face-young-girl.jpg" alt="Young girl receiving skincare">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-title">Skincare</span>
+                                <i class="fas fa-search-plus gallery-zoom-icon"></i>
+                            </div>
+                        </a>
+                        <!-- <img src="images/face-young-girl.jpg" alt="Barber work 2"> -->
+                    </div>
+                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="200">
+                         <a href="images/female-hairdresser.jpg" data-lightbox="salon-gallery" data-title="Expert Hairdressing">
+                            <img src="images/female-hairdresser.jpg" alt="Hairdresser working on client's hair">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-title">Hairdressing</span>
+                                <i class="fas fa-search-plus gallery-zoom-icon"></i>
+                            </div>
+                        </a>
+                        <!-- <img src="images/female-hairdresser.jpg" alt="Barber work 3"> -->
+                    </div>
+                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="300">
+                        <a href="images/hairstylist-cutting.jpg" data-lightbox="salon-gallery" data-title="Precision Hair Cutting">
+                            <img src="images/hairstylist-cutting.jpg" alt="Hairstylist cutting hair">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-title">Hair Cutting</span>
+                                <i class="fas fa-search-plus gallery-zoom-icon"></i>
+                            </div>
+                        </a>
+                        <!-- <img src="images/hairstylist-cutting.jpg" alt="Barber work 4"> -->
+                    </div>
+                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="400">
+                        <a href="images/kids-image-1.jpg" data-lightbox="salon-gallery" data-title="Fun Kids Haircut">
+                            <img src="images/kids-image-1.jpg" alt="Kid's haircut">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-title">Kids' Cuts</span>
+                                <i class="fas fa-search-plus gallery-zoom-icon"></i>
+                            </div>
+                        </a>
+                        <!-- <img src="images/kids-image-1.jpg" alt="Barber work 5"> -->
+                    </div>
+                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="500">
+                        <a href="images/stylish-man.jpg" data-lightbox="salon-gallery" data-title="Stylish Men's Grooming">
+                            <img src="images/stylish-man.jpg" alt="Stylish man after grooming">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-title">Men's Grooming</span>
+                                <i class="fas fa-search-plus gallery-zoom-icon"></i>
+                            </div>
+                        </a>
+                        <!-- <img src="images/stylish-man.jpg" alt="Barber work 6"> -->
+                    </div>
+                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="400">
+                        <a href="images/makeup.jpg" data-lightbox="salon-gallery" data-title="Professional Makeup Application">
+                            <img src="images/makeup.jpg" alt="Makeup application">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-title">Makeup Artistry</span>
+                                <i class="fas fa-search-plus gallery-zoom-icon"></i>
+                            </div>
+                        </a>
+                        <!-- <img src="images/makeup.jpg" alt="Barber work 5"> -->
+                    </div>
+                    <div class="gallery-item animate-on-scroll zoom-in" data-delay="500">
+                        <a href="images/kids-image-2.jpg" data-lightbox="salon-gallery" data-title="Happy Kid After Haircut">
+                            <img src="images/kids-image-2.jpg" alt="Another kid's haircut">
+                            <div class="gallery-item-overlay">
+                                <span class="gallery-item-title">Children's Styling</span>
+                                <i class="fas fa-search-plus gallery-zoom-icon"></i>
+                            </div>
+                        </a>
+                        <!-- <img src="images/kids-image-2.jpg" alt="Barber work 6"> -->
+                    </div>  
+                </div>
+                <div class="text-center animate-on-scroll fade-in-up" data-delay="800" style="margin-top: 40px;">
+                    <a href="#" class="cta-button">View Full Portfolio</a> <!-- Replace # with actual link -->
                 </div>
             </div>
         </section>
@@ -456,6 +525,11 @@
     <!-- Scroll to Top Button (NEW) -->
     <a href="#hero" id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></a>
 
+    <!-- jQuery (Required by Lightbox2) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Lightbox2 JS (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
     <script src="script.js"></script>
 
 
