@@ -981,6 +981,15 @@ footer {
     height: 2px;
     background-color: #c09a6b !important;
 }
+.footer-hours h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #c09a6b !important;
+}
 .footer-social h4::after {
     content: '';
     position: absolute;
