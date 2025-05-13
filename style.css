@@ -815,7 +815,10 @@ header .nav-links a.active::after { /* Assuming 'active' class is added via JS f
     box-shadow: var(--shadow-medium);
 }
 .offer-icon-wrapper {
-    font-size: 2.5rem;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 20px;
     display: inline-block;
