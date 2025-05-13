@@ -890,6 +890,35 @@ footer {
     font-size: 1.4rem;
     margin-bottom: 20px;
     color: #fff; 
+    position: relative;
+    line-height: 60px;
+}
+.footer-about h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #c09a6b !important;
+}
+.footer-links h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #c09a6b !important;
+}
+.footer-social h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #c09a6b !important;
 }
 .footer-links ul li {
     margin-bottom: 10px;
