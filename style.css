@@ -714,6 +714,7 @@ header .nav-links a.active::after { /* Assuming 'active' class is added via JS f
     box-shadow: var(--shadow-soft);
     transition: transform var(--transition-speed) var(--transition-cubic),
                 box-shadow var(--transition-speed) var(--transition-cubic);
+    border-radius: 10px;
 }
 
 .gallery-item a { /* The link now wraps the image and overlay */
