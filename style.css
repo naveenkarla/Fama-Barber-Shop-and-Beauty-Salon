@@ -67,6 +67,36 @@ body {
     0%, 100% { transform: scale(1); opacity: 1; }
     50% { transform: scale(1.2); opacity: 0.7; }
 }
+
+/* === SCROLL TO TOP BUTTON === */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px; right: 30px;
+    width: 50px; height: 50px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none; border-radius: 50%;
+    text-align: center; line-height: 50px;
+    font-size: 1.5rem;
+    box-shadow: var(--shadow-medium);
+    cursor: pointer;
+    opacity: 0; visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity var(--transition-speed) ease, 
+                visibility var(--transition-speed) ease,
+                transform var(--transition-speed) ease,
+                background-color var(--transition-speed-fast) ease;
+    z-index: 999;
+}
+#scrollToTopBtn.visible {
+    opacity: 1; visibility: visible;
+    transform: translateY(0);
+}
+#scrollToTopBtn:hover {
+    background-color: var(--primary-color-darker);
+}
+
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -999,4 +1029,5 @@ footer {
     .offers-grid { grid-template-columns: 1fr; }
     .contact-details p { font-size: 1rem; }
     .map-container { height: 250px; }
+     #scrollToTopBtn { width: 40px; height: 40px; line-height: 40px; font-size: 1.2rem; bottom: 20px; right: 20px;}
 }
