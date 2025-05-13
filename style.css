@@ -695,10 +695,10 @@ header .nav-links a.active::after { /* Assuming 'active' class is added via JS f
 .offer-card {
     background: linear-gradient(135deg, var(--light-bg), #fff);
     padding: 35px 30px;
-    border-radius: var(--border-radius-main);
+    border-radius: 10px;
     box-shadow: var(--shadow-soft);
     text-align: center;
-    border-left: 5px solid var(--primary-color);
+    border: 5px solid var(--primary-color);
     transition: transform var(--transition-speed) var(--transition-cubic), 
                 box-shadow var(--transition-speed) var(--transition-cubic);
 }
