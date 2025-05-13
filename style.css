@@ -686,6 +686,44 @@ header .nav-links a.active::after { /* Assuming 'active' class is added via JS f
     transform: scale(1.1);
 }
 
+/* === SPECIAL OFFERS SECTION === */
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+.offer-card {
+    background: linear-gradient(135deg, var(--light-bg), #fff);
+    padding: 35px 30px;
+    border-radius: var(--border-radius-main);
+    box-shadow: var(--shadow-soft);
+    text-align: center;
+    border-left: 5px solid var(--primary-color);
+    transition: transform var(--transition-speed) var(--transition-cubic), 
+                box-shadow var(--transition-speed) var(--transition-cubic);
+}
+.offer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-medium);
+}
+.offer-icon-wrapper {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 15px;
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+    border-radius: 50%;
+}
+.offer-card h3 {
+    font-family: var(--font-headings); font-size: 1.8rem;
+    margin-bottom: 15px; color: var(--secondary-color);
+}
+.offer-card .offer-details { font-size: 1.1rem; margin-bottom: 10px; color: var(--text-dark); }
+.offer-card .offer-details strong { color: var(--accent-color); }
+.offer-card .offer-terms { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 25px; }
+
+
 /* === TESTIMONIALS SECTION === */
 #testimonials {
     background-color: var(--dark-bg); /* Ensure dark background */
@@ -889,6 +927,8 @@ footer {
     
     .contact-grid { grid-template-columns: 1fr; }
     .map-container { margin-top: 30px; height: 300px; }
+
+    .offers-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
 }
 
 @media (max-width: 768px) {
@@ -944,6 +984,7 @@ footer {
     .section-title { font-size: 1.8rem; }
     .gallery-grid { grid-template-columns: 1fr; } 
     .gallery-item img { height: auto; } 
+    .offers-grid { grid-template-columns: 1fr; }
     .contact-details p { font-size: 1rem; }
     .map-container { height: 250px; }
 }
